@@ -1,11 +1,14 @@
 # Step 2: Define tools and model
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from langchain.tools import tool
 from langchain.chat_models import init_chat_model
 
 
 model = init_chat_model(
-    "gemini-1.5-flash",
+    "gemini-3.5-flash",
     model_provider="google_genai",
     temperature=0,
 
